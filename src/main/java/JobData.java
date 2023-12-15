@@ -103,10 +103,10 @@ public class JobData {
             for (Map.Entry<String, String> columns : row.entrySet()) {
                 String aColumn = columns.getKey();
                 String aValue = row.get(aColumn);
-                if (aColumn.toLowerCase().contains(value)) {
-                    jobs.add(row);
-                    break;
-                } else if (aValue.toLowerCase().contains(value)) {
+//                if (aColumn.toLowerCase().contains(value)) {
+//                    jobs.add(row);
+//                    break;
+                /*} else*/ if (aValue.toLowerCase().contains(value)) {
                     jobs.add(row);
                 }
             }
